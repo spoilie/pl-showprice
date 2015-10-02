@@ -22,10 +22,10 @@ $aModule          = array(
     'title'       => '<strong>Paul Lamp</strong> ShowPrice',
     'description' => '',
     'thumbnail'   => '',
-    'version'     => '0.1.0 (2015-09-24)',
+    'version'     => '0.1.0 (2015-10-02)',
     'author'      => 'Paul Lamp',
     'email'       => 'pl@paul-lamp.de',
-    'url'         => 'http://www.paul-lamp.de',
+    'url'         => 'https://github.com/spoilie/pl-showprice',
     'extend'      => array(
         'oxutilsview' => 'paul_lamp/pl-showprice/extend/oxutilsview_pl',
     ),
