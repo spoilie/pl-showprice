@@ -55,7 +55,7 @@ function smarty_block_oxhasrights( $params, $content, &$smarty, &$repeat )
         $actCategory = $smarty->_tpl_vars['oView']->getActiveCategory();
         // Pruefe ob Artikel ohne Preisanzeige konfiguriert
         $actProduct = $smarty->_tpl_vars['oView']->getProduct();
-        if ( (!$actCategory->oxcategories__plshowprice->value || !$actProduct->getCategory()->oxcategories__plshowprice->value) || !$actProduct->oxarticles__plshowprice->value ) {
+        if ( (isset($actCategory->oxcategories__plshowprice->value) && !$actCategory->oxcategories__plshowprice->value || !$actProduct->getCategory()->oxcategories__plshowprice->value) || !$actProduct->oxarticles__plshowprice->value ) {
             return false;
         }
     }
